@@ -1,0 +1,56 @@
+/* RecipeCard.css */
+
+.recipe-card {
+  display: flex; /* Align items horizontally */
+  border: 1px solid #ddd; /* Card border */
+  border-radius: 12px; /* Rounded corners */
+  overflow: hidden; /* Hide overflow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin: 16px; /* Margin between cards */
+  transition: transform 0.2s, box-shadow 0.2s; /* Smooth transitions */
+  width: 800px; /* Full width */
+  align-items: center; /* Center items vertically */
+  height: 350px;
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px); /* Raise card on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.recipe-image {
+  width: 52%; /* 52% width for image */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover area without stretching */
+}
+
+.recipe-details {
+  padding: 16px; /* Inner padding for details */
+  display: flex; /* Flexbox for details */
+  flex-direction: column; /* Stack vertically */
+  justify-content: center; /* Center content vertically */
+  width: 48%; /* 48% width for details */
+}
+
+.recipe-name {
+  font-size: 1.5em; /* Recipe name size */
+  margin: 0 0 8px; /* Space below name */
+  color: #333; /* Name color */
+}
+
+.recipe-cuisine,
+.recipe-course,
+.recipe-time,
+.recipe-servings {
+  margin: 4px 0; /* Space between text items */
+  color: #666; /* Text color */
+  font-size: 1em; /* Base font size */
+}
+
+.recipe-cuisine {
+  font-weight: bold; /* Highlight cuisine */
+}
+
+.recipe-time {
+  color: #007bff; /* Color for emphasis */
+}
